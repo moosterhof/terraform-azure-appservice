@@ -1,4 +1,4 @@
-# Azure AppService Request
+# Azure App Service Request
 
 This module is supplied by the cloud platforms team for all App Service instances on Azure.
 Please note that all requests for App Service instances that bypass this module will be blocked by default. 
