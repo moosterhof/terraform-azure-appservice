@@ -40,3 +40,10 @@ variable "description" {
   type        = string
   description = "Provide a description of the resource"
 }
+
+# description
+variable "https_only" {
+  type        = string
+  description = "Whether to allow access via HTTP or not"
+  default     = true
+}
