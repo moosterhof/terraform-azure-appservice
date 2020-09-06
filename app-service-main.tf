@@ -40,6 +40,7 @@ resource "azurerm_app_service" "app-service" {
   location            = azurerm_resource_group.appservice-rg.location
   resource_group_name = azurerm_resource_group.appservice-rg.name
   app_service_plan_id = azurerm_app_service_plan.service-plan.id
+  https_only          = var.https_only
 
   site_config {
     linux_fx_version = "DOTNETCORE|3.1"
