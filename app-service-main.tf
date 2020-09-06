@@ -36,7 +36,7 @@ resource "azurerm_app_service_plan" "service-plan" {
 
 # Create the App Service
 resource "azurerm_app_service" "app-service" {
-  name                = "-${var.region}-${var.environment}-${var.app_name}-app-service"
+  name                = "${var.app_name}-app-service"
   location            = azurerm_resource_group.appservice-rg.location
   resource_group_name = azurerm_resource_group.appservice-rg.name
   app_service_plan_id = azurerm_app_service_plan.service-plan.id
