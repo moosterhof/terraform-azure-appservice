@@ -43,7 +43,14 @@ variable "description" {
 
 # description
 variable "https_only" {
-  type        = string
+  type        = bool
   description = "Whether to allow access via HTTP or not"
   default     = true
+}
+
+# description
+variable "http2_enabled" {
+  type        = bool
+  description = "Whether to turn on HTTP2 or not"
+  default     = false
 }
