@@ -44,7 +44,6 @@ resource "azurerm_app_service" "app-service" {
 
   site_config {
     linux_fx_version = "DOTNETCORE|3.1"
-    http2_enabled = var.http2_enabled
   }
 
   tags = {
