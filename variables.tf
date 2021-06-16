@@ -48,9 +48,3 @@ variable "https_only" {
   default     = true
 }
 
-# description
-variable "http2_enabled" {
-  type        = bool
-  description = "Whether to turn on HTTP2 or not"
-  default     = false
-}
